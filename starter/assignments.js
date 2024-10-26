@@ -91,5 +91,76 @@ console.log('19' - '13' + 17); // -> 23
 console.log('123' < 57); // -> false
 console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
 
+
+
+// EQUALITY OPERATORS == vs. === 
+
+const numNeighbours = prompt(
+  'How many neighbour countries does your country have?'
+);
+
+// LATER : This helps us prevent bugs
+const numNeighbours = Number(
+  prompt('How many neighbour countries does your country have?')
+);
+
+const numNeighbours = 5;
+
+if (numNeighbours === 1) {
+    console.log('Only one border!');
+} else if (numNeighbours > 1) {
+    console.log('More than 1 border!');
+} else {
+    console.log('No borders!');
+}
+
+
+
+// LOGICAL OPERATORS 
+
+const country = "Croatia"
+const language = "English";
+const population = 40000000;
+const isIsland = false;
+
+if (language === 'English' && population < 50 && !isIsland) {
+    console.log(`You should live in in ${country} :)`);
+} else {
+    console.log(`${country} does not meet your criteria :(`);
+}
+
+
+
+// THE SWITCH STATEMENT
+
+switch (language) {
+    case 'chinese':
+    case 'mandarin':
+        console.log('Most number of native speakers!');
+        break;
+    case 'spanish':
+        console.log('2nd place in number of native speakers');
+        break;
+    case 'english':
+        console.log('3rd place');
+        break;
+    case 'hindi':
+        console.log('Number 4');
+        break;
+    case 'arabic':
+        console.log('5th most spoken language');
+        break; 
+    default:
+        console.log('Great language too :D');
+}
+
 */
 
+// THE CONDITIONAL (TERNARY) OPERATOR
+
+const country = 'Croatia';
+const population = 130;
+
+console.log(
+    `${country}'s population is ${population > 33 ? 'above' : 'below'} average`
+  );
